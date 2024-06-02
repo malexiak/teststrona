@@ -1,0 +1,99 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #050505;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  @keyframes typingLogin {
+    from { width: 0; }
+    to { width: 24%; }
+  }
+  
+  @keyframes blinking {
+    50% { border-color: transparent; }
+  }
+  
+  .login-container h2 {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    font-size: 28px;
+    animation: typingLogin 2s steps(22), blinking .7s step-end infinite alternate;
+  }
+  @keyframes blinking {
+    50% { border-color: transparent; }
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    background-color: #111111;
+    height: 360px;
+    width: 480px;
+    padding: 65px;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  
+  .login-container input {
+    width: 390px;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222222;
+    color: #fff;
+    /* text-align: center; */
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .login-container button {
+    width: 275px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0063ce;
+    font-family: "Roboto Mono", monospace;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s;
+  }
+  
+  .login-container button:hover {
+    background-color: #003a77;
+  }
+  
+  .login-container p {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+  
+  .login-container p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-container p a:hover {
+    color: #0056b3;
+  }
+  
+  .login-message {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 16px;
+  }
+  
